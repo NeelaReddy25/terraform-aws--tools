@@ -47,7 +47,7 @@ module "nexus" {
   # convert StringList to list and get first element
   subnet_id = "subnet-0ff7989885902f665"
   ami = data.aws_ami.nexus_ami_info.id
-   key_name = aws_key_pair.tools.key_name
+  key_name = aws_key_pair.tools.key_name
   root_block_device = [
     {
       volume_type = "gp3"
